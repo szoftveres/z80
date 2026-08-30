@@ -41,6 +41,12 @@ The power supply wire is driven at this side of the panel
 
 The 1N4148 diodes and the naked power supply wires. 
 
+
+CPU board Schematics:
+
+![schem_cpu](schem_cpu.jpeg)
+
+
 ## The Video board
 
 This panel was assembled prior to the CPU board, and it was very challenging to design. First I populated the left side of the panel with the 8 ICs that are responsible for timing and sync signal generation. The result was a circuit that could draw a big white box on the TV screen.
@@ -116,6 +122,13 @@ Right: Clock divider and interrupt generating circuits for timing the CPU
 ![z80_vid_reg.jpg](z80_vid_reg.jpg)
 
 
+Video board Schematics:
+
+![video_schem](video_schem.jpeg)
+
+
+Video timing (European PAL system):
+
 ![z80_timing.jpg](z80_timing.jpg)
 
 Gray area: The text area (256 rows, 256 pixels each), one text row due time: 32 usec
@@ -131,6 +144,10 @@ In the gray area, the Video RAM is used by the video circuit, so if the CPU give
 
 
 ![z80_chargen.jpg](z80_chargen.jpg)
+
+Character generator ROM:
+
+![chargen](chargen.bin)
 
 Character set of the computer (Most of the characters are copied from the C64 character set).
 I drew some special characters by my own, like face symbol, O.K., 'micro' and 'omega'.
@@ -166,6 +183,11 @@ Right: Data bus, CPU clock (4MHz, can be stopped by the Video circuit), CPU Mask
 
 
 ## Screenshots
+
+Source code:
+
+![z80.asm](z80.asm)
+
 
 ![z80_scr_login.jpg](z80_scr_login.jpg)
 
